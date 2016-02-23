@@ -4,7 +4,7 @@
 
 FROM pottava/nodejs:stable
 
-RUN npm install --global gulp
+RUN npm install --global gulp@3.9
 
 WORKDIR /app
 VOLUME /app
