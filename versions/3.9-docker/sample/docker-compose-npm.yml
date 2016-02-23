@@ -1,0 +1,7 @@
+# docker-compose -f docker-compose-npm.yml run install
+
+install:
+  image: pottava/gulp:3.9-docker
+  command: npm install
+  volumes:
+    - .:/app

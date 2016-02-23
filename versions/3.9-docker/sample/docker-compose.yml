@@ -1,0 +1,22 @@
+# docker-compose up -d
+version: "2"
+
+services:
+  app:
+    image: pottava/golang:1.5
+    command: go run /go/src/github.com/pottava/docker-gulp/versions/3.9-docker-compose/sample/app/main.go
+    ports:
+      - 80:80
+    volumes:
+      - ./app:/go/src/github.com/pottava/docker-gulp/versions/3.9-docker-compose/sample/app
+    container_name: app
+
+  gulp:
+    image: pottava/gulp:3.9-docker
+    command: gulp
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./node_modules:/app/node_modules
+      - ./gulpfile.js:/app/gulpfile.js
+      - $GOPATH:/go
+    container_name: gulp

@@ -1,0 +1,13 @@
+{
+  "name": "docker-gulp",
+  "description": "Gulp.js docker images based on Alpine Linux.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pottava/docker-gulp.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2"
+  }
+}
