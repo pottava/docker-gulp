@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/pottava/docker-gulp/versions/3.9-docker-compose/sample/app/module"
+	"github.com/pottava/docker-gulp/versions/3.9-docker/sample/app/module"
 )
 
 func main() {
