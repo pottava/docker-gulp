@@ -9,5 +9,5 @@ gulp.task("restart", function() {
 });
 
 gulp.task("default", function() {
-    gulp.watch("/go/src/github.com/pottava/docker-gulp/versions/3.9-docker-compose/sample/app/**/*.go", ["restart"]);
+    gulp.watch("/go/src/github.com/pottava/docker-gulp/versions/3.9-docker/sample/app/**/*.go", ["restart"]);
 });
